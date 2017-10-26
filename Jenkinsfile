@@ -6,8 +6,6 @@ pipeline {
         stage('Test') {
             steps {
                 sh 'node --version'
-            }
-            steps {
                 sh 'echo "Fail!"; exit 1'
             }
         }
